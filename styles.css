@@ -192,13 +192,33 @@ h1 {
 }
 
 .product-image {
-    height: 450px;
+    width: 300px;
     border-radius: 10px 0px 0px 10px;
 }
 
+.card-img {
+    width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+    .product-image {
+        width: 300px;
+        border-radius: 10px 10px 0px 0px;
+    }
+  }
+
+
+/* .product-image-mobile {
+    border-radius: 10px 10px 0px 0px;
+} */
+
 .main-container {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 
 }
 

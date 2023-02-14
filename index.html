@@ -19,9 +19,12 @@
 
 <body>
   <main class="main-container">
-    <div class="card-img">
+    <picture class="card-img">
+      <source class="product-image-mobile" srcset="images/image-product-mobile.jpg" style="border-radius: 10px 10px 0px 0px;" media="(max-width: 600px)" >
+      <source class="product-image-desktop" srcset="images/image-product-desktop.jpg" media="(min-width: 600px)" border-radius="10px 0px 0px 10px">
       <img class="product-image" src="images/image-product-desktop.jpg" alt="Picture of Chanel Paris Gabrielle Perfume">
-    </div>
+    </picture>
+
     <div class="card-desc">
       <p class="category-name">Perfume</p>
       <h1>Gabrielle Essence Eau De Parfum</h1>
@@ -32,8 +35,7 @@
         <p class="ori-pricing">$169.99</p>
       </div>
       <button class="add-button">
-        <img src="images/icon-cart.svg" alt="Cart icon">
-        Add to Cart
+        <img src="images/icon-cart.svg" alt="Cart icon">Add to Cart
       </button>
     </div>
   </main>
